@@ -1,0 +1,23 @@
+﻿@model CafeFinder.Models.HomeIndexViewModel
+@{
+    ViewData["Title"] = "Home Page";
+    string currentItem = "";
+}
+<img src="~/images/category2.jpg" style=center>
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Welcome!</h1>
+                <p class="lead">
+                    We have had @Model.VisitorCount visitors this month.
+                </p>
+                <h2>Cafes</h2>
+
+
+                <p>
+                    @Html.ActionLink("Go to our Cafe Directory", "Directory")
+                </p>
+
+
+            </div>
+        </div>
+

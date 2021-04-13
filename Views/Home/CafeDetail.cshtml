@@ -1,0 +1,33 @@
+﻿@model Packt.Shared.Cafe
+@{
+    ViewData["Title"] = "Cafe Detail - " + Model.Name;
+}
+<h2>Cafe Details</h2>
+<hr />
+<img src="~/images/category1.png" style=center sizes="150">
+<div>
+    <dl class="dl-horizontal">
+        <dt>Cafe ID:</dt>
+        <dd>@Model.ID</dd>
+        <dt>Name:</dt>
+        <dd>@Model.Name</dd>
+        <dt>Building Number:</dt>
+        <dd>@Model.BuildingNumber</dd>
+        <dt>Street:</dt>
+        <dd>@Model.Street</dd>
+        <dt>City:</dt>
+        <dd>@Model.City</dd>
+        <dt>State:</dt>
+        <dd>@Model.State</dd>
+        <dt>Zip code</dt>
+        <dd>@Model.Zip</dd>
+        <dt>Longitude</dt>
+        <dd>@Model.Longitude</dd>
+        <dt>Latitude</dt>
+        <dd>@Model.Latitude</dd>
+    </dl>
+
+    @Html.ActionLink("Edit Cafe", "EditCafe", "Home", new { ID = @Model.ID }) <br /> <br /> <br />
+    @Html.ActionLink("Delete Cafe", "DeleteCafe", "Home", new { ID = @Model.ID }) <br />
+
+</div>

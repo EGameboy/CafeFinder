@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+ <TargetFramework>net5.0</TargetFramework>
+ </PropertyGroup>
+ <ItemGroup>
+ <ProjectReference Include="..\EntitiesLib\EntitiesLib.csproj" />
+ <PackageReference Include="Microsoft.EntityFrameworkCore.SQLite" Version="5.0.5" />
+ </ItemGroup>
+</Project>

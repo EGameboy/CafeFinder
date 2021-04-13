@@ -1,0 +1,75 @@
+﻿@model Packt.Shared.Cafe
+@{
+    ViewData["Title"] =
+    "Add a Cafe";
+}
+<h2>Edit Cafe</h2>
+<form asp-action="ChangeCafe" method="get">
+    <input asp-for="ID" type="hidden" />
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input asp-for="Name" />
+
+            </td>
+        </tr>
+        <tr>
+            <td>Building Number:</td>
+            <td>
+                <input asp-for="BuildingNumber" />
+            </td>
+        </tr>
+        <tr>
+            <td>Street:</td>
+            <td>
+                <input asp-for="Street" />
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>
+                <input asp-for="City" />
+            </td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td>
+                <input asp-for="State" />
+            </td>
+        </tr>
+        <tr>
+            <td>Zip:</td>
+            <td>
+                <input asp-for="Zip" />
+            </td>
+        </tr>
+        <tr>
+            <td>Latitude:</td>
+            <td>
+                <input asp-for="Latitude" />
+            </td>
+        </tr>
+        <tr>
+            <td>Longitude:</td>
+            <td>
+                <input asp-for="Longitude" />
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>    <input type="submit"/></td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+</form>

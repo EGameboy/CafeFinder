@@ -1,0 +1,36 @@
+﻿@model CafeFinder.Models.HomeIndexViewModel
+@{
+    ViewData["Title"] = "Cafe Directory";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>A list of all the cafes in our database</p>
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="SearchByZip" method="get">
+            <input name="zip"
+                   placeholder="Search by Zip Code" />
+            <input type="submit" />
+        </form>
+        <p>
+            @Html.ActionLink("Add a Cafe", "CafeInput")
+        </p>
+        <div id="newspaper">
+
+
+            <ul>
+                @foreach (var item in @Model.Cafes)
+                {
+                    <li>
+                        <a asp-controller="Home"
+                           asp-action="CafeDetail"
+                           asp-route-id="@item.ID">
+                            @item.Name
+                        </a>
+                    </li>
+                }
+            </ul>
+        </div>
+
+    </div>
+</div>

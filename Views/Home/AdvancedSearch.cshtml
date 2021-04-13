@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Packt.Shared.Cafe>
+@{
+    ViewData["Title"] =
+    "Advanced Search";
+}
+<h2>Search By Longitude and Latitude:</h2>
+<form asp-action="SearchByLongLat" method="get">
+
+    <table>
+        <tr>
+            <td>Longitude:</td>
+            <td>
+                <input name="longitude"
+                       placeholder="Insert Longitude">
+            </td>
+        </tr>
+        <tr>
+            <td>Latitude:</td>
+            <td>
+                <input name="latitude"
+                       placeholder="Insert Latitude Number">
+            </td>
+        </tr>
+        <tr>
+            <td>Radius:</td>
+            <td>
+                <input name="radius"
+                       placeholder="Insert radius of search">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>    <input type="submit" /></td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+</form>

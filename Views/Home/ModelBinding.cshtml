@@ -1,0 +1,24 @@
+﻿@model CafeFinder.Models.SearchCafe
+@{
+    ViewData["Title"] = "Cafe Search";
+}
+<h1>@ViewData["Cafe Search"]</h1>
+<h1>Cafe Search</h1>
+<div>
+    Enter a Zip Code to find a cafe near you!
+</div>
+<form method="POST" action="/home/modelbinding/2?id=3">
+    <input name="Zip Code" value="" />
+    <input type="submit" />
+</form>
+@if (Model != null)
+{
+    <h2>Submitted Thing</h2>
+    <hr />
+    <div>
+        <dl class="dl-horizontal">
+            <dt>Model.ZipCode</dt>
+            <dd>@Model.ZipCode</dd>
+        </dl>
+    </div>
+    }

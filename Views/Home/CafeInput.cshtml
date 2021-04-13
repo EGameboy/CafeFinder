@@ -1,0 +1,83 @@
+﻿@model IEnumerable<Packt.Shared.Cafe>
+@{
+    ViewData["Title"] =
+    "Add a Cafe";
+}
+<h2>Add a Cafe</h2>
+<form asp-action="AddCafe" method="get">
+
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td>
+                <input name="Name"
+                       placeholder="Insert name of Cafe">
+            </td>
+        </tr>
+        <tr>
+            <td>Building Number:</td>
+            <td>
+                <input name="BuildingNumber"
+                       placeholder="Insert Building Number">
+            </td>
+        </tr>
+        <tr>
+            <td>Street:</td>
+            <td>
+                <input name="Street"
+                       placeholder="Insert Street of Cafe">
+            </td>
+        </tr>
+        <tr>
+            <td>City:</td>
+            <td>
+                <input name="City"
+                       placeholder="Insert City of Cafe">
+            </td>
+        </tr>
+        <tr>
+            <td>State:</td>
+            <td>
+                <input name="State"
+                       placeholder="Insert State of Cafe">
+            </td>
+        </tr>
+        <tr>
+            <td>Zip:</td>
+            <td>
+                <input name="Zip"
+                       placeholder="Insert Zip Code of Cafe">
+            </td>
+        </tr>
+        <tr>
+            <td>Latitude:</td>
+            <td>
+                <input name="Latitude"
+                       placeholder="Insert Latitude of Cafe">
+            </td>
+        </tr>
+        <tr>
+            <td>Longitude:</td>
+            <td>
+                <input name="Longitude"
+                       placeholder="Insert Longitude of Cafe">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>    <input type="submit" id=""/></td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+</form>
+
